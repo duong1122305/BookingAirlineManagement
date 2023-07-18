@@ -18,7 +18,7 @@ namespace BookingAirlineManagement
             }
             else
             {
-                MessageBox.Show("Thanh");
+                MessageBox.Show("Thanh s");
             }
         }
     }
