@@ -16,6 +16,10 @@ namespace BookingAirlineManagement
             {
                 MessageBox.Show("Thanh cong");
             }
+            else
+            {
+                MessageBox.Show("Thanh");
+            }
         }
     }
 }
