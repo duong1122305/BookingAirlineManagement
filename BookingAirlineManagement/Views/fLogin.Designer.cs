@@ -34,12 +34,12 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            checkBox1 = new CheckBox();
-            linkLabel2 = new LinkLabel();
-            linkLabel1 = new LinkLabel();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            btn_login = new Button();
+            cb_remem = new CheckBox();
+            lb_forget = new LinkLabel();
+            lb_dki = new LinkLabel();
+            tb_pass = new TextBox();
+            tb_email = new TextBox();
             label3 = new Label();
             label2 = new Label();
             panel1.SuspendLayout();
@@ -64,12 +64,12 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(checkBox1);
-            panel1.Controls.Add(linkLabel2);
-            panel1.Controls.Add(linkLabel1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(btn_login);
+            panel1.Controls.Add(cb_remem);
+            panel1.Controls.Add(lb_forget);
+            panel1.Controls.Add(lb_dki);
+            panel1.Controls.Add(tb_pass);
+            panel1.Controls.Add(tb_email);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -108,63 +108,65 @@
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // btn_login
             // 
-            button1.BackColor = Color.DodgerBlue;
-            button1.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(134, 331);
-            button1.Name = "button1";
-            button1.Size = new Size(174, 37);
-            button1.TabIndex = 9;
-            button1.Text = "Đăng nhập";
-            button1.UseVisualStyleBackColor = false;
+            btn_login.BackColor = Color.DodgerBlue;
+            btn_login.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_login.Location = new Point(134, 331);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(174, 37);
+            btn_login.TabIndex = 9;
+            btn_login.Text = "Đăng nhập";
+            btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += button1_Click;
             // 
-            // checkBox1
+            // cb_remem
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(41, 270);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(157, 24);
-            checkBox1.TabIndex = 8;
-            checkBox1.Text = "Ghi nhớ đăng nhập";
-            checkBox1.UseVisualStyleBackColor = true;
+            cb_remem.AutoSize = true;
+            cb_remem.Location = new Point(41, 270);
+            cb_remem.Name = "cb_remem";
+            cb_remem.Size = new Size(157, 24);
+            cb_remem.TabIndex = 8;
+            cb_remem.Text = "Ghi nhớ đăng nhập";
+            cb_remem.UseVisualStyleBackColor = true;
             // 
-            // linkLabel2
+            // lb_forget
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(299, 274);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(120, 20);
-            linkLabel2.TabIndex = 7;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Quên mật khẩu ?";
+            lb_forget.AutoSize = true;
+            lb_forget.Location = new Point(299, 274);
+            lb_forget.Name = "lb_forget";
+            lb_forget.Size = new Size(120, 20);
+            lb_forget.TabIndex = 7;
+            lb_forget.TabStop = true;
+            lb_forget.Text = "Quên mật khẩu ?";
             // 
-            // linkLabel1
+            // lb_dki
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(235, 274);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(63, 20);
-            linkLabel1.TabIndex = 6;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Đăng ký";
+            lb_dki.AutoSize = true;
+            lb_dki.Location = new Point(235, 274);
+            lb_dki.Name = "lb_dki";
+            lb_dki.Size = new Size(63, 20);
+            lb_dki.TabIndex = 6;
+            lb_dki.TabStop = true;
+            lb_dki.Text = "Đăng ký";
             // 
-            // textBox2
+            // tb_pass
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(41, 220);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(378, 27);
-            textBox2.TabIndex = 5;
+            tb_pass.BorderStyle = BorderStyle.FixedSingle;
+            tb_pass.Location = new Point(41, 220);
+            tb_pass.Name = "tb_pass";
+            tb_pass.Size = new Size(378, 27);
+            tb_pass.TabIndex = 5;
+            tb_pass.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // tb_email
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.ForeColor = SystemColors.WindowText;
-            textBox1.Location = new Point(41, 122);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(378, 27);
-            textBox1.TabIndex = 4;
+            tb_email.BorderStyle = BorderStyle.FixedSingle;
+            tb_email.ForeColor = SystemColors.WindowText;
+            tb_email.Location = new Point(41, 122);
+            tb_email.Name = "tb_email";
+            tb_email.Size = new Size(378, 27);
+            tb_email.TabIndex = 4;
             // 
             // label3
             // 
@@ -188,7 +190,7 @@
             label2.TabIndex = 2;
             label2.Text = "Tên đăng nhập";
             // 
-            // Form1
+            // fLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -197,7 +199,7 @@
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(849, 440);
             Controls.Add(panel1);
-            Name = "Form1";
+            Name = "fLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
@@ -212,12 +214,12 @@
 
         private Label label1;
         private Panel panel1;
-        private Button button1;
-        private CheckBox checkBox1;
-        private LinkLabel linkLabel2;
-        private LinkLabel linkLabel1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Button btn_login;
+        private CheckBox cb_remem;
+        private LinkLabel lb_forget;
+        private LinkLabel lb_dki;
+        private TextBox tb_pass;
+        private TextBox tb_email;
         private Label label3;
         private Label label2;
         private PictureBox pictureBox2;
