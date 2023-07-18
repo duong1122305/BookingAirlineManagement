@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
             label1 = new Label();
             panel1 = new Panel();
             pictureBox3 = new PictureBox();
@@ -80,7 +79,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Image = Properties.Resources.icons8_airline_50;
             pictureBox3.Location = new Point(314, 19);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(35, 30);
@@ -90,7 +89,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Image = Properties.Resources.icons8_password_50;
             pictureBox2.Location = new Point(41, 174);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(35, 30);
@@ -100,7 +99,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.icons8_email_50;
+            pictureBox1.Image = Properties.Resources.icons8_email_501;
             pictureBox1.Location = new Point(41, 72);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(35, 30);
